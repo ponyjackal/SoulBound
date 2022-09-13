@@ -1,2 +1,1 @@
-import "./greeter";
-import "./greeterUpgradeable";
+import "./soulBadge";

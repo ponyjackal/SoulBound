@@ -9,7 +9,7 @@ import { readValue, writeValue } from "./values/utils";
 
 task("Greeter:setGreeting").setAction(async function (taskArguments: TaskArguments, { ethers }) {
   const accounts: Signer[] = await ethers.getSigners();
-  const greetingAddress = readContractAddress("greeter");
+  const greetingAddress = readContractAddress("soulBadge");
   const greeting = readValue("greeting");
 
   const greeterFactory: Greeter__factory = <Greeter__factory>await ethers.getContractFactory("Greeter", accounts[0]);
