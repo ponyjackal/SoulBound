@@ -2,8 +2,8 @@ import { Signer } from "@ethersproject/abstract-signer";
 import { task } from "hardhat/config";
 import { TaskArguments } from "hardhat/types";
 
-import type { Greeter } from "../../src/types/Greeter";
-import type { Greeter__factory } from "../../src/types/factories/Greeter__factory";
+import type { Greeter } from "../../src/types/contracts/Greeter";
+import type { Greeter__factory } from "../../src/types/factories/contracts/Greeter__factory";
 import { readContractAddress } from "../deploy/addresses/utils";
 import { readValue, writeValue } from "./values/utils";
 
